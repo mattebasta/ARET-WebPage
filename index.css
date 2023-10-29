@@ -1,0 +1,111 @@
+body{
+    background: rgb(18, 16, 48);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5em;
+    background: rgb(18, 16, 48);
+    border: solid 3px whitesmoke;
+    border-radius: 10px;
+}
+
+.navbarLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-style: normal;
+    padding-left: 1em;
+    color: white;
+}
+
+
+.pagesLink{
+    display:flex;
+    flex-direction: row;
+    padding-right: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pagesLink a{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color: white;
+    padding: 2em;
+    text-decoration: underline;
+}
+.pagesLink a:link{
+    color: white;
+    text-decoration: underline;
+}
+.pagesLink a:visited{
+    color: white;
+    text-decoration: underline rgb(87, 87, 230);
+}
+
+.mainPage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
+.mainOneText{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 4em;
+    padding: 1em;
+}
+.mainTwoText {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 2em;
+    padding-right: 2em;
+}
+
+.UIExample{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+}
+.UIDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('./img/WireframeUI.svg');
+    background-color: white;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+}
+.UIDiv span{
+    cursor: default;
+    color: gray;
+    padding-left: 30px;
+}
+.UISpanToShow{
+    font-size: 30px;
+}
+
+.Info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2em;
+    font-size: 2.5em;
+    text-align: center;
+}
