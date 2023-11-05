@@ -1,3 +1,48 @@
+@keyframes shifting_animation_A{
+    0% {
+        content: 'A';
+    }
+    20% {
+        content: 'P';
+    }
+    40% {
+        content: 'D';
+    }
+    60% {
+        content: 'M';
+    }
+    80% {
+        content: 'V';
+    }
+    100% {
+        content: 'A';
+    }
+}
+@keyframes shifting_animation_R{
+    0% {content: 'R';}
+    20% {content: '5';}
+    40% {content: 'H';}
+    60% {content: 'B';}
+    80% {content: 'C';}
+    100% {content: 'R';}
+}
+@keyframes shifting_animation_E{
+    0% {content: 'E';}
+    20% {content: 'I';}
+    40% {content: 'J';}
+    60% {content: 'N';}
+    80% {content: 'A';}
+    100% {content: 'E';}
+}
+@keyframes shifting_animation_T{
+    0% {content: 'T';}
+    20% {content: 'Q';}
+    40% {content: 'K';}
+    60% {content: 'Z';}
+    80% {content: 'U';}
+    100% {content: 'T';}
+}
+
 body{
     background: rgb(18, 16, 48);
 }
@@ -11,9 +56,10 @@ body{
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 1.5em;
+    justify-content: space-evenly;
+    width: 98vw;
+    flex-wrap: wrap;
+    font-size: 2vw;
     background: rgb(18, 16, 48);
     border: solid 3px whitesmoke;
     border-radius: 10px;
@@ -66,39 +112,96 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    font-size: 4em;
+    font-size: 3vw;
     padding: 1em;
 }
-.mainTwoText {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 2em;
-    padding-right: 2em;
+
+.mainOneTextA span:before{
+    padding: 10px;
+    content: 'A';
+    animation: shifting_animation_A 5s ;
 }
+.mainOneTextR span:before{
+    padding: 10px;
+    content: 'R';
+    animation: shifting_animation_R 5s ;
+    animation-delay: 1s;
+}
+.mainOneTextE span:before{
+    padding: 10px;
+    content: 'E';
+    animation: shifting_animation_E 5s ;
+    animation-delay: 2s;
+}
+.mainOneTextT span:before{
+    padding: 10px;
+    content: 'T';
+    animation: shifting_animation_T 5s ;
+    animation-delay: 3s;
+}
+
 
 .UIExample{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 1.5em;
 }
-.UIDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: url('./img/WireframeUI.svg');
+.UIDivSys{
+    background-image: url('./img/WireframeUISys.svg');
     background-color: white;
     background-size: cover;
     width: 800px;
     height: 600px;
 }
-.UIDiv span{
-    cursor: default;
-    color: gray;
-    padding-left: 30px;
+.UIDivSpo{
+    background-image: url('./img/WireframeUISpooky.svg');
+    background-color: white;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
 }
-.UISpanToShow{
-    font-size: 30px;
+.UIDivNoel{
+    background-image: url('./img/WireframeUINoel.svg');
+    background-color: white;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+}
+.UIDivNight{
+    background-image: url('./img/WireframeUINight.svg');
+    background-color: white;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+}
+.UIDivCott{
+    background-image: url('./img/WireframeUICott.svg');
+    background-color: white;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+}
+.UIContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vw;
+    text-align: center;
+    padding: 30px;
+}
+.newBtn{
+    position: relative;
+    top: 60px;
+    left: -380px;
+    z-index: 1;
+}
+.newBtn span{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
 }
 
 .Info{
@@ -106,6 +209,33 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-top: 2em;
-    font-size: 2.5em;
+    font-size: 2vw;
     text-align: center;
+}
+
+.videoContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.videoContainer p{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.videoContainer video{
+    width: 70vw;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: rgb(41, 39, 47);
 }
