@@ -1,5 +1,5 @@
 End-User License Agreement (EULA) of ARET (Amazing Random Exam Tutor)
-This End-User License Agreement ("EULA") is a legal agreement between you and ARET (Amazing Random Exam Tutor)
+This End-User License Agreement ("EULA") is a legal agreement between you and ARET (Amazing Random Exam Tutor) and the ARET developer Matteo Bastante
 
 This EULA agreement governs your acquisition and use of our ARET (Amazing Random Exam Tutor) software ("Software") directly from ARET (Amazing Random Exam Tutor) or indirectly through a ARET (Amazing Random Exam Tutor) authorized reseller or distributor (a "Reseller").
 
