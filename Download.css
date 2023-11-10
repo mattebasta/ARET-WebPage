@@ -33,8 +33,11 @@ body{
     color: white;
 }
 .navbarLogo img{
-    width: 10vw;
-    height: 20vh;
+    display: block;
+    max-width: 200px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
 }
 
 
@@ -84,9 +87,11 @@ body{
     height: 40vh;
     color: white;
     text-decoration: none;
+    border-radius: 20px;
 }
 .downloadScript a{
-    text-decoration: none;
+    color: white;
+    text-decoration: underline rgb(74, 154, 226);
     }
 .downloadScript img{
     width: 12vw;
