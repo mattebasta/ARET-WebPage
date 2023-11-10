@@ -1,5 +1,9 @@
 body{
-    background: rgb(18, 16, 48);
+    background: rgb(47,34,113);
+    background: -moz-linear-gradient(43deg, rgba(47,34,113,1) 0%, rgba(83,36,203,1) 53%, rgba(60,11,152,1) 100%);
+    background: -webkit-linear-gradient(43deg, rgba(47,34,113,1) 0%, rgba(83,36,203,1) 53%, rgba(60,11,152,1) 100%);
+    background: linear-gradient(43deg, rgba(47,34,113,1) 0%, rgba(83,36,203,1) 53%, rgba(60,11,152,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2271",endColorstr="#3c0b98",GradientType=1);
 }
 
 .container{
@@ -15,7 +19,6 @@ body{
     width: 100%;
     flex-wrap: wrap;
     font-size: 2vw;
-    background: rgb(18, 16, 48);
     border: solid 3px whitesmoke;
     border-radius: 10px;
 }
